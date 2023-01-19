@@ -8,15 +8,32 @@
 }
 
 .filtersContainer{
-    border: 2px solid blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 0 20px 0;
+    border: 2px solid rgb(223, 223, 223);
+    width: 1420px;
+    margin-left: 0.5rem;
+display: flex;
+flex-direction: column;
+margin-bottom: 2rem;
+
+    
 }
+.filters{
+
+
+}
+
+.buttonsContainer{
+  padding: 1rem;
+}
+
+.buttonsContainer>.closeBtn{
+margin-left: 78vw;
+margin-right: 1vw;
+}
+
+
 .settingsContainer{
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 .settingsContainer>button{
 margin-left: 90vw;

@@ -182,10 +182,18 @@ const Table = () => {
                     style={{ display: open ? 'flex' : 'none' }}
                 >
 
-                    {variablesArray.map((item) => (
+                   <div className="filters">
+                   {variablesArray.map((item) => (
                         <Filter key={item.id} filterName={item} />
                     ))}
+                   </div>
+                
+                    <div className="buttonsContainer">
+                    <Button className='closeBtn' variant='outlined'>Close</Button>
+                    <Button variant='contained'>Apply Changes</Button>
+                    </div>
                 </div>
+                
             </div>
             <table className='mainTable'>
 
