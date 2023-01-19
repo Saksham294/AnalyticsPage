@@ -156,11 +156,17 @@ const Table = () => {
         console.log(arr)
 
     }
-
+    //Toggle filterContiner on click
+    const [open, setOpen] = React.useState(false);
+    const handleClickOpen = () => {
+        setOpen(!open);
+    };
+  
     return (
         <div>
             <div className="settingsContainer">
                 <Button startIcon={<TuneIcon />}
+                    onClick={handleClickOpen}
 
                     sx={{
                         color: 'white', backgroundColor: '#3f51b5', margin: '10px', padding: '10px', borderRadius: '10px',
@@ -172,7 +178,9 @@ const Table = () => {
 
 
                 >Settings</Button>
-                <div className="filtersContainer">
+                <div className="filtersContainer"
+                    style={{ display: open ? 'flex' : 'none' }}
+                >
 
                     {variablesArray.map((item) => (
                         <Filter key={item.id} filterName={item} />
@@ -183,15 +191,15 @@ const Table = () => {
 
                 <thead className='tableHead'>
                     <tr>
-                        <th><FilterAltIcon /><br></br>Date</th>
-                        <th><FilterAltIcon /><br></br>App Name</th>
-                        <th><FilterAltIcon /><br></br>AD Request</th>
-                        <th><FilterAltIcon /><br></br>AD Response</th>
-                        <th><FilterAltIcon /><br></br>Impression</th>
-                        <th><FilterAltIcon /><br></br>Clicks</th>
-                        <th><FilterAltIcon /><br></br>Revenue</th>
-                        <th><FilterAltIcon /><br></br>Fill Rate</th>
-                        <th><FilterAltIcon /><br></br>CTR</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>Date</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>App Name</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>AD Request</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>AD Response</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>Impression</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>Clicks</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>Revenue</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>Fill Rate</th>
+                        <th><Button><FilterAltIcon /></Button><br></br>CTR</th>
                     </tr>
                 </thead>
                 <tbody className='tableColumn'>
