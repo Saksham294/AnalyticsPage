@@ -1,0 +1,32 @@
+.filter {
+    margin-top: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+border: 2px solid red;
+}
+
+.filterContainer {
+    border: 2px solid rgb(216, 216, 216);
+    width: 7vw;
+    border-radius: 5px;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.leftSide {
+    border-radius: 3px;
+    background-color: blue;
+    width: 0.35vw;
+    padding: 0;
+    height: 2.5vw;
+}
+
+.rightSide {
+    /* background-color: green; */
+    padding: 0.5vw;
+
+}

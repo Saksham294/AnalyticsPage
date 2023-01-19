@@ -1,0 +1,44 @@
+.mainTable {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filtersContainer{
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+.settingsContainer{
+  border: 2px solid black;
+}
+.settingsContainer>button{
+margin-left: 90vw;
+}
+.tableHead {
+    background-color: #f2f2f2;
+    border: 1px solid black;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.tableColumn{
+    border: 1px solid black;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.column{
+    border: 1px solid black;
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
